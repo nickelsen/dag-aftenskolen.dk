@@ -1,0 +1,7 @@
+title: Dag- og aftenskolen i Rønde
+email: info@dag-aftenskolen.dk
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "http://dag-aftenskolen.dk" # the base hostname & protocol for your site, e.g. http://example.com
+
+# Build settings
+encoding: utf-8
