@@ -5,4 +5,4 @@ url: "http://dag-aftenskolen.dk" # the base hostname & protocol for your site, e
 exclude: [build.sh, deploy.sh, serve.sh, README.md, Gemfile, Gemfile.lock]
 
 # Build settings
-encoding: ISO-8859-1
+encoding: UTF-8
