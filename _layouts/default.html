@@ -2,31 +2,26 @@
 <html>
 <head>
 	<title>Dag- og aftenskolen i Rønde</title>
-    <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Raleway&display=swap'>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" type="text/css" href="{{ '/assets/css/main-2019.css' | relative_url }}">
     <meta http-equiv="cache-control" content="no-cache" />
     <meta http-equiv="expires" content="Tue, 01 Jan 1980 1:00:00 GMT" />
     <meta http-equiv="pragma" content="no-cache" />
 </head>
-<body>
-    <div class="header"><img class="logo" src="{{ '/assets/img/logo.png' | relative_url }}" /></div>
-    <div class="subheader">
-	    <div class="menuheader"></div>
-	    <div class="mainheader"></div>
+<body class="w3-content w3-light-grey">
+<div class="w3-container w3-center blue w3-padding">
+    <img src="{{ '/assets/img/logo.png' | relative_url }}" class="w3-margin" style="width: 414px;"/><br/>
+</div>
+    <div class="w3-container green w3-center w3-large">
+        <a href="{% link index.html %}" class="w3-button w3-margin-left">Forside</a>
+        <a href="/#kurser" class="w3-button w3-margin-left">Kurser</a>
+        <a href="{% link tilmelding.html %}" class="w3-button w3-margin-left">Tilmelding</a>
+        <a href="{% link bestyrelsen.html %}" class="w3-button w3-margin-left">Bestyrelsen</a>
+        <a href="http://dag-aftenskolen.us13.list-manage.com/subscribe?u=c6144597b9fd189322490d247&id=5268bca3e2" class="w3-button w3-margin-left">Nyhedsbrev</a>
     </div>
-
-    <div class="content">
-	    <div class="menu">
-	        - <a href="/" class="link1">Startside</a><br />
-          - <a href="{% link kurser.html %}" class="link1">Kurser</a><br />
-          - <a href="{% link tilmelding.html %}" class="link1">Tilmelding</a> <br />
-          - <a href="{% link bestyrelsen.html %}" class="link1">Bestyrelsen</a> <br /> <br />
-	    </div>
-	    <div class="main">
-            {{ content }}
-        </div>
-    </div>
-</body>
-<script type="text/javascript">
+{{ content }}
+</body><script type="text/javascript">
 
   var _gaq = _gaq || [];
   _gaq.push(['_setAccount', 'UA-18356168-1']);
