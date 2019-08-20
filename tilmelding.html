@@ -3,90 +3,50 @@ layout: default
 title: Tilmelding
 permalink: /tilmelding/
 ---
-			Her kan du tilmelde dig holdene i Dag- og aftenskolen i R&oslash;nde.
-		<form action="https://formspree.io/anders.nickelsen+tilmelding@gmail.com" method="post">
-		<table>
-			<tr>
-				<td>Cpr-nr.:</td>
-				<td><input name="cpr"></td>
-			</tr>
-			<tr>
-				<td>Fornavn:</td>
-				<td><input name="firstname"></td>
-			</tr>
-			<tr>
-				<td>Efternavn:</td>
-				<td><input name="lastname"></td>
-			</tr>
-			<tr>
-				<td>Adresse:</td>
-				<td><input name="address1"></td>
-			</tr>
-			<tr>
-				<td>Adresse:</td>
-				<td><input name="address2"></td>
-			</tr>
-			<tr>
-				<td>Postnr.:</td>
-				<td><input name="zip"></td>
-			</tr>
-			<tr>
-				<td>By:</td>
-				<td><input name="zipcity"></td>
-			</tr>
-			<tr>
-				<td>Telefon:</td>
-				<td><input name="phone"></td>
-			</tr>
-			<tr>
-				<td>Email</td>
-				<td><input name="email"></td>
-			</tr>
-		</table>
-		<table>
-					<tr>
-				<td><input type="checkbox" name="hold1"></td>
-				<td>1. Harmonika/let øvede</td>
-			</tr>
-					<tr>
-				<td><input type="checkbox" name="hold2"></td>
-				<td>2. Harmonika/øvede</td>
-			</tr>
-					<tr>
-				<td><input type="checkbox" name="hold3"></td>
-				<td>3. Litteratur/hold 1</td>
-			</tr>
-					<tr>
-				<td><input type="checkbox" name="hold4"></td>
-				<td>4. Litteratur/hold 2</td>
-			</tr>
-					<tr>
-				<td><input type="checkbox" name="hold5"></td>
-				<td>5. Litteratur/hold 3</td>
-			</tr>
-					<tr>
-				<td><input type="checkbox" name="hold6"></td>
-				<td>6. Seniordans</td>
-			</tr>
-					<tr>
-				<td><input type="checkbox" name="hold7"></td>
-				<td>7. Læsekreds for de travle</td>
-			</tr>
-					<tr>
-				<td><input type="checkbox" name="hold8"></td>
-				<td>8. Couragekoret</td>
-			</tr>
-					<tr>
-				<td><input type="checkbox" name="hold9"></td>
-				<td>9. Keramik/Raku</td>
-			</tr>
-					<tr>
-				<td><input type="checkbox" name="hold10"></td>
-				<td>10. Syng i Den Blå</td>
-			</tr>
-				</table>
-		<input type="hidden" name="_next" value="{% link tak.html %}" />
-		<input type="text" name="_gotcha" style="display:none" />
-		<input type="submit" value="Send tilmelding">
-		</form>
+<div class="w3-container blue w3-padding-large">
+	<div class="w3-row w3-padding-24">
+		<div class="w3-col l1"><p></p></div>
+		<div class="w3-col l10">
+			<div class="w3-row w3-white">
+				<div class="w3-white w3-container">
+					<h3>Her kan du tilmelde dig holdene i Dag- og aftenskolen i Rønde:</h3>
+					<form action="https://formspree.io/anders.nickelsen+tilmelding@gmail.com" method="post" class="w3-container w3-padding">
+						<div class="w3-container w3-padding">
+							{% for course in site.data.courses %}
+							<input type="checkbox" name="hold{{ course.number }}">&nbsp;&nbsp;
+							<label class="w3-large">{{ course.number }}. {{ course.title }}{% if course.subtitle %}/{{
+								course.subtitle}}{% endif %}</label><br/>
+							{% endfor %}
+						</div>
+						<div class="w3-container w3-padding">
+							<label class="w3-large">Cpr-nr.:</label>
+							<input name="cpr" class="w3-input w3-border w3-round"><br/>
+							<label class="w3-large">Fornavn:</label>
+							<input name="firstname" class="w3-input w3-border w3-round"><br/>
+							<label class="w3-large">Efternavn:</label>
+							<input name="lastname" class="w3-input w3-border w3-round"><br/>
+							<label class="w3-large">Adresse:</label>
+							<input name="address1" class="w3-input w3-border w3-round"><br/>
+							<label class="w3-large">Adresse:</label>
+							<input name="address2" class="w3-input w3-border w3-round"><br/>
+							<label class="w3-large">Postnr.:</label>
+							<input name="zip" class="w3-input w3-border w3-round"><br/>
+							<label class="w3-large">By:</label>
+							<input name="zipcity" class="w3-input w3-border w3-round"><br/>
+							<label class="w3-large">Telefon:</label>
+							<input name="phone" class="w3-input w3-border w3-round"><br/>
+							<label class="w3-large">Email:</label>
+							<input name="email" class="w3-input w3-border w3-round"><br/>
+							<input type="hidden" name="_next" value="{% link tak.html %}"/>
+							<input type="text" name="_gotcha" style="display:none"/>
+							<div class="w3-center w3-padding">
+								<input type="submit" value="Send tilmelding" class="w3-btn w3-white w3-border">
+							</div>
+						</div>
+					</form>
+				</div>
 			</div>
+		</div>
+		<div class="w3-col l1"><p></p></div>
+	</div>
+</div>
