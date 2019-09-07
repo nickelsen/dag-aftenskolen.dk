@@ -5,33 +5,58 @@
     <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Raleway&display=swap'>
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" type="text/css" href="{{ '/assets/css/main-2019.css' | relative_url }}">
+    <link rel="shortcut icon" href="{{ '/assets/img/favicon.ico' | relative_url }}" type="image/x-icon">
+    <link rel="icon" href="{{ '/assets/img/favicon.ico' | relative_url }}" type="image/x-icon">
+    <meta name="description" content="Vi tilbyder kurser og arrangementer for alle. Se vores spændende program på hjemmesiden." />
+    <meta name="keywords" content="aftenskole,kurser,arrangementer,harmonika,litteratur,håndarbejde,decoupage,raku,kor,sang,debat,dans,baby,familie" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Language" content="da" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <meta http-equiv="cache-control" content="no-cache" />
     <meta http-equiv="expires" content="Tue, 01 Jan 1980 1:00:00 GMT" />
     <meta http-equiv="pragma" content="no-cache" />
+    <!-- hello -->
+    <!-- Facebook Pixel Code -->
+    <script>
+        !function(f,b,e,v,n,t,s)
+        {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+            n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+            if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+            n.queue=[];t=b.createElement(e);t.async=!0;
+            t.src=v;s=b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t,s)}(window, document,'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '553834135448573');
+        fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+                   src="https://www.facebook.com/tr?id=553834135448573&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Facebook Pixel Code -->
+
+    <script type="text/javascript">
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-18356168-1']);
+        _gaq.push(['_trackPageview']);
+
+        (function() {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+    </script>
 </head>
 <body class="w3-content w3-light-grey">
 <div class="w3-container w3-center blue w3-padding">
-    <img src="{{ '/assets/img/logo.png' | relative_url }}" class="w3-margin" style="width: 414px;"/><br/>
+    <img src="{{ '/assets/img/logo.png' | relative_url }}" class="w3-margin w3-image" style="max-width: 414px;"/><br/>
 </div>
-    <div class="w3-container green w3-center w3-large">
-        <a href="{% link index.html %}" class="w3-button w3-margin-left">Forside</a>
-        <a href="/#kurser" class="w3-button w3-margin-left">Kurser</a>
-        <a href="{% link tilmelding.html %}" class="w3-button w3-margin-left">Tilmelding</a>
-        <a href="{% link bestyrelsen.html %}" class="w3-button w3-margin-left">Bestyrelsen</a>
-        <a href="http://dag-aftenskolen.us13.list-manage.com/subscribe?u=c6144597b9fd189322490d247&id=5268bca3e2" class="w3-button w3-margin-left">Nyhedsbrev</a>
-    </div>
+<div class="w3-container green w3-center w3-large">
+    <a href="{% link index.html %}" class="w3-button w3-margin-left">Forside</a>
+    <a href="/#kurser" class="w3-button w3-margin-left">Kurser</a>
+    <a href="{% link tilmelding.html %}" class="w3-button w3-margin-left">Tilmelding</a>
+    <a href="{% link bestyrelsen.html %}" class="w3-button w3-margin-left">Bestyrelsen</a>
+    <a href="http://dag-aftenskolen.us13.list-manage.com/subscribe?u=c6144597b9fd189322490d247&id=5268bca3e2" class="w3-button w3-margin-left">Nyhedsbrev</a>
+</div>
 {{ content }}
-</body><script type="text/javascript">
-
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-18356168-1']);
-  _gaq.push(['_trackPageview']);
-
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
-
-</script>
-<html>
+</body>
+</html>
