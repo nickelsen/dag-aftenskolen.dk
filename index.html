@@ -7,22 +7,20 @@ layout: default
         <div class="w3-col l10">
             <div class="w3-cell-row w3-white">
                 <div class="w3-col l4 w3-hide-small w3-hide-medium">
-                    <img src="{{ '/assets/img/snowdrop.jpg' | relative_url }}" class="w3-image">
+                    <img src="{{ '/assets/img/efteraar.jpg' | relative_url }}" class="w3-image">
                 </div>
                 <div class="w3-col l8 w3-white w3-center w3-container">
-                    <h2>Forårssæson 2022</h2>
-<!--
+                    <h2>Efterårssæson 2022</h2>
                     <p class="w3-large">
                         Velkommen til en ny sæson<br/>
                         med tilbud på spændende kurser<br/>
                         - både i dag- og aftentimerne.</p>
--->
                 </div>
             </div>
         </div>
         <div class="w3-col l1"><p></p></div>
     </div>
-    <div class="w3-row w3-padding-24">
+    <div class="w3-row w3-padding-24 w3-hide">
         <div class="w3-col l1"><p></p></div>
         <div class="w3-col l10">
             <div class="w3-row w3-white">
@@ -65,7 +63,7 @@ layout: default
     </div>
 </div>
 <a id="nyheder">
-    <div class="w3-container green w3-xxlarge">
+    <div class="w3-container green w3-xxlarge w3-hide">
         <div class="w3-row">
             <div class="w3-col l1 w3-hide-small w3-hide-medium"><p></p></div>
             <div class="w3-col l11">
@@ -75,7 +73,7 @@ layout: default
         </div>
     </div>
 </a>
-<div class="w3-container blue w3-padding-large">
+<div class="w3-container blue w3-padding-large w3-hide">
     {% for entry in site.data.news %}
     <!-- News entry card -->
     <div class="w3-row w3-padding-24">
@@ -94,7 +92,7 @@ layout: default
     </div>
     {% endfor %}
 </div>
-<div class="w3-container green w3-xxlarge">
+<div class="w3-container green w3-xxlarge w3-hide">
     <div class="w3-row">
         <div class="w3-col l1 w3-hide-small w3-hide-medium"><p></p></div>
         <div class="w3-col l11">
@@ -103,10 +101,9 @@ layout: default
         <div class="w3-col l1"></div>
     </div>
 </div>
-<div class="w3-container blue w3-padding-large">
+<div class="w3-container blue w3-padding-large w3-hide">
 
     <!-- Activity card -->
-    <!---
     <div class="w3-row w3-padding-24">
       <div class="w3-col l1"><p></p></div>
       <div class="w3-col l10">
@@ -126,10 +123,8 @@ layout: default
       </div>
       <div class="w3-col l1"><p></p></div>
     </div>
-    -->
 
     <!-- Activity card -->
-    <!--
     <div class="w3-row w3-padding-24">
       <div class="w3-col l1"><p></p></div>
       <div class="w3-col l10">
@@ -149,10 +144,8 @@ layout: default
       </div>
       <div class="w3-col l1"><p></p></div>
     </div>
-    -->
 
     <!-- Activity card -->
-    <!--
     <div class="w3-row w3-padding-24">
       <div class="w3-col l1"><p></p></div>
       <div class="w3-col l10">
@@ -169,7 +162,6 @@ layout: default
       </div>
       <div class="w3-col l1"><p></p></div>
     </div>
-    -->
 </div>
 <a id="kurser">
     <div class="w3-container green w3-xxlarge">
