@@ -1,0 +1,25 @@
+name: CI
+on:
+  push:
+    secrets:
+      AWS_ACCESS_KEY_ID:
+        required: true
+      AWS_SECRET_ACCESS_KEY:
+        required: true
+      BUCKET:
+        required: true
+      DISTRIBUTION_ID:
+        required: true
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    env:
+      AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+      AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+      BUCKET: ${{ secrets.BUCKET }}
+      DISTRIBUTION_ID: ${{ secrets.DISTRIBUTION_ID }}
+    steps:
+      - name: Check out repository code
+        uses: actions/checkout@v3
+      - run: build.sh
+      #- run: deploy.sh
