@@ -1,6 +1,8 @@
 name: CI
 on:
   push:
+    branches:
+      - 'main'
     secrets:
       AWS_ACCESS_KEY_ID:
         required: true
