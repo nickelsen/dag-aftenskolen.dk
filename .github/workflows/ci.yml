@@ -1,17 +1,8 @@
 name: CI
 on:
   push:
-    branches:
-      - 'master'
-    secrets:
-      AWS_ACCESS_KEY_ID:
-        required: true
-      AWS_SECRET_ACCESS_KEY:
-        required: true
-      BUCKET:
-        required: true
-      DISTRIBUTION_ID:
-        required: true
+#    branches:
+#      - 'master'
 jobs:
   deploy:
     runs-on: ubuntu-latest
