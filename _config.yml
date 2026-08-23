@@ -2,7 +2,7 @@ title: Dag- og aftenskolen i Rønde
 email: info@dag-aftenskolen.dk
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://dag-aftenskolen.dk" # the base hostname & protocol for your site, e.g. http://example.com
-exclude: [build.sh, deploy.sh, serve.sh, README.md, Gemfile, Gemfile.lock]
+exclude: [build.sh, deploy.sh, serve.sh, README.md, Gemfile, Gemfile.lock, IMPROVEMENTS.md]
 
 # Build settings
 encoding: UTF-8
